@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-extension WidgExt on Widget {
+extension WidgetExt on Widget {
   Widget ident({Color color, Color borderColor}) => Container(
         child: this,
         decoration: BoxDecoration(
