@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:sb_flutter_extensions/sb_flutter_extensions.dart';
 
-
 void main() {
   runApp(MyApp());
 }
@@ -54,7 +53,7 @@ class _MyHomePageState extends State<MyHomePage> {
             style: Theme.of(context).textTheme.headline4,
           ),
         ],
-      ),
+      ).centered(),
       floatingActionButton: FloatingActionButton(
         onPressed: _incrementCounter,
         tooltip: 'Increment',
