@@ -1,6 +1,14 @@
 import 'package:flutter/material.dart';
 
 extension WidgExt on Widget {
+  Widget ident({Color color, Color borderColor}) => Container(
+        child: this,
+        decoration: BoxDecoration(
+          color: color,
+          border: borderColor == null ? null : Border.all(color: borderColor),
+        ),
+      );
+
   Widget expanded({int flex = 1}) => Expanded(
         flex: flex,
         child: this,
