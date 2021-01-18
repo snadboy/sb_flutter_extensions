@@ -45,4 +45,10 @@ extension WidgetExt on Widget {
         right: right,
         bottom: bottom,
       );
+
+  Widget sizedBox({double width, double height}) => SizedBox(
+        height: height,
+        width: width,
+        child: this,
+      );
 }
