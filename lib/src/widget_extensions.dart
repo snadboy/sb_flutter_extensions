@@ -9,7 +9,12 @@ extension WidgetExt on Widget {
         ),
       );
 
-  Widget roundedCorners(radius) => ClipRRect(
+  Widget align(Alignment alignment) => Align(
+        child: this,
+        alignment: alignment,
+      );
+
+  Widget roundedCorners(double radius) => ClipRRect(
         child: this,
         borderRadius: radius == null ? null : BorderRadius.circular(radius),
       );
